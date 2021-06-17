@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#fff"
+    tools:context=".AnotherActivity">
+
+    <RelativeLayout
+        android:id="@+id/map_view"
+        android:layout_width="378dp"
+        android:layout_height="276dp"
+        android:layout_below="@+id/description"
+        android:layout_marginTop="128dp"/>
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher_background"
+        app:riv_corner_radius="5dp"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="Title"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:id="@+id/description"
+        android:textSize="20sp"
+        android:textColor="#a9a9a9"
+        android:layout_below="@id/title"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Phonenumber"
+        android:textColor="#a9a9a9"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/phone_icon"
+        android:layout_width="48dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/phonenumber"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="313dp"
+        android:layout_marginRight="313dp"
+        android:background="@drawable/phone_icon" />
+
+    <Button
+        android:id="@+id/car_icon"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/phonenumber"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginRight="208dp"
+        android:background="@drawable/car_icon" />
+
+    <Button
+        android:id="@+id/bus_icon"
+        android:layout_width="62dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/phonenumber"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="218dp"
+        android:layout_marginLeft="218dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
+        android:background="@drawable/bus_icon" />
+
+    <Button
+        android:id="@+id/walk_icon"
+        android:layout_width="60dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/phonenumber"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="305dp"
+        android:layout_marginLeft="305dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/walk_icon" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/phone_icon"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="38dp"
+        android:gravity="center"
+        android:text="전화"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/car_icon"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="53dp"
+        android:text="자동차"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="66dp"
+        android:layout_height="15dp"
+        android:layout_alignTop="@+id/bus_icon"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="223dp"
+        android:layout_marginLeft="223dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="106dp"
+        android:text="대중교통"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/walk_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:text="도보"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>
